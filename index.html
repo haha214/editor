@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <div contenteditable='true' style="width:100%;height:200px;border:1px solid yellow;overflow-y:auto;" id="testdiv">
+                
+            </div>
+            <button id="testid" type="button">上传测试</button>
+            <button id="linkBtn" type="button">链接菜单按钮</button>
+            <div id="linkDrop" style="display:none;">
+                <input type="text" name="" value="" id="textinput" style="border:1px solid red;">
+                <input type="text" name="" value="" id="urlinput" style="border:1px solid red;">
+                <button type="button" id="urlbtn">添加链接</button>
+            </div>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/plupload/plupload.full.min.js"></script>
+        <script src="js/plupload/i18n/zh_CN.js"></script>
+        <script src="js/qiniu.js"></script>
+        <script src="js/editor.js"></script>
+        <script>
+    var test = new wuanEditor({
+        editId: 'testdiv',
+        insertImgBtnId : 'testid',
+        link: {
+            linkTextId: 'textinput',
+            linkUrlId : 'urlinput',
+            btnSubmit: 'urlbtn',
+            menuItem: 'linkBtn',
+            dropOpt: 'linkDrop'
+        }
+    });
+    test.init();
+</script>
+    </body>
+</html>
