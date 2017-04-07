@@ -47,9 +47,9 @@ wuanEditor生成编辑器时，默认宽度为100%,请手动设置编辑器高�
 <!--这里引用jquery,wuanEditor.js及七牛相关依赖-->
 <script type="text/javascript">
     function uploadInit (){
-		  var editor = this;
-		  var btnId = editor.imgUploadBtnId;
-		  var uploader = Qiniu.uploader({
+	  var editor = this;
+	  var btnId = editor.imgUploadBtnId;
+	  var uploader = Qiniu.uploader({
           runtimes: 'html5,flash,html4', //上传模式,依次退化
           browse_button: btnId, //上传选择的点选按钮，**必需**
           uptoken_url: '/uptoken',  //Ajax请求upToken的Url，**强烈建议设置**（服务端提供）
