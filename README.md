@@ -82,6 +82,9 @@ wuanEditor生成编辑器时，默认宽度为100%,请手动设置编辑器高�
                 }
             }
        });
-	  }
+     }
+     var editor = new wuanEditor('test');
+     editor.config.imgUpload = uploadInit;// 配置自定义上传初始化事件，uploadInit方法在上面定义了
+     editor.create();
 </script>
 ```
