@@ -653,39 +653,6 @@
                 return;
             }
             imgUpload.call(editor);
-            // var uploader = Qiniu.uploader({
-            //     runtimes: 'html5,flash,html4', //上传模式,依次退化
-            //     browse_button: editor.menus.img.btnId, //上传选择的点选按钮，**必需**
-            //     uptoken_url: '/uptoken',
-            //     domain: 'http://7xlx4u.com1.z0.glb.clouddn.com/',//bucket 域名，下载资源时用到，**必需**
-            //     max_file_size: '10mb', //最大文件体积限制
-            //     flash_swf_url: '/javascripts/plupload/Moxie.swf', //引入flash,相对路径
-            //     filters: {
-            //         mime_types: [
-            //             //只允许上传图片文件 （注意，extensions中，逗号后面不要加空格）
-            //             {
-            //                 title: "图片文件",
-            //                 extensions: "jpg,gif,png,bmp"
-            //             }
-            //         ]
-            //     },
-            //     max_retries: 3, //上传失败最大重试次数
-            //     chunk_size: '4mb', //分块上传时，每片的体积
-            //     auto_start: true, //选择文件后自动上传，若关闭需要自己绑定事件触发上传
-            //     init: {
-            //         'FileUploaded': function(up, file, info){
-            //             var domain = up.getOption('domain');
-            //             var res = $.parseJSON(info);
-            //             var sourceLink = domain + res.key; //获取上传成功后的文件的Url
-            //             //editor.insertImage(sourceLink);// 插入图片到editor
-            //             editor.command("insertImage",sourceLink);
-            //         },
-            //         'Error': function(up, err, errTip) {
-            //             //上传出错时,处理相关的事情
-            //             console.log('on Error');
-            //         }
-            //     }
-            // });
         });
     });
     //事件绑定
