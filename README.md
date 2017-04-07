@@ -9,7 +9,7 @@
 
 使用div生成一个编辑器，wuanEditor将自动生成一个可编辑区域
 ```html
-<div id = "div1" style="width: 100%; height: 200px; "></div>
+<div id = "div1" style="height: 200px; "></div>
 
 <!--这里引用jquery和wuanEditor.js-->
 <script type="text/javascript">
@@ -26,7 +26,7 @@ wuanEditor生成编辑器时，默认宽度为100%,请手动设置编辑器高�
 
 可通过修改 editor.config.menus 来自定义编辑器的菜单的显示/隐藏，该操作必须在 editor.create() 方法之前
 ```html
-<div id = "div1" style="width: 100%; height: 200px; "></div>
+<div id = "div1" style="height: 200px; "></div>
 
 <!--这里引用jquery和wuanEditor.js-->
 <script type="text/javascript">
@@ -42,7 +42,7 @@ wuanEditor生成编辑器时，默认宽度为100%,请手动设置编辑器高�
 目前编辑器只提供集成插件的方式进行图片上传，以集成七牛云存储为例
 
 ```html
-<div id = "div1" style="width: 100%; height: 200px; "></div>
+<div id = "div1" style="height: 200px; "></div>
 
 <!--这里引用jquery,wuanEditor.js及七牛相关依赖-->
 <script type="text/javascript">
